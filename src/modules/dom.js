@@ -11,3 +11,14 @@ const displayCity = document.getElementById('weather-forecast');
 const currDate = document.querySelector('.date');
 const c = document.getElementById('switchF');
 const d = document.getElementById('degrees');
+
+
+export default (data, tempF = null) => {
+    const list = document.createElement('li');
+    list.classList.add('city');
+    currCity[0].innerHTML = data.name;
+    currCity[1].innerHTML = data.country;
+    currDate.innerHTML = new Date();
+    currTemp.innerHTML = `<i class='fa fa-thermometer-three-quarters'></i>${Math.round(
+      data.temp,
+    )}°C`;
