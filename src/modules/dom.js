@@ -33,3 +33,16 @@ export default (data, tempF = null) => {
     const elTempF = `<i class='fa fa-thermometer-three-quarters'></i>${Math.round(
       tempF,
     )}°F`;
+
+    if (currTempF) {
+      cc.innerHTML = cel;
+      currTemp.innerHTML = cel;
+      el.innerHTML = 'Switch to °F';
+      currTempF = false;
+    } else {
+      cc.innerHTML = elTempF;
+      currTemp.innerHTML = elTempF;
+      el.innerHTML = 'Switch to °C';
+      currTempF = true;
+    }
+  };
