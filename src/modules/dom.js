@@ -22,3 +22,14 @@ export default (data, tempF = null) => {
     currTemp.innerHTML = `<i class='fa fa-thermometer-three-quarters'></i>${Math.round(
       data.temp,
     )}°C`;
+
+    weatherImg.src = `https://openweathermap.org/img/wn/${data.icon}@2x.png`;
+  desc.innerHTML = data.description;
+  let currTempF = false;
+  const toggleTempF = (el, cc, tempInfo) => {
+    const cel = `<i class='fa fa-thermometer-three-quarters'></i>${Math.round(
+      tempInfo,
+    )}°C`;
+    const elTempF = `<i class='fa fa-thermometer-three-quarters'></i>${Math.round(
+      tempF,
+    )}°F`;
