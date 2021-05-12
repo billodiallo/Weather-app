@@ -14,7 +14,6 @@ searchForm.addEventListener('submit', event => {
     return response.json();
   };
 
-
   Promise.all([
     fetchWeather(currentCity, 'metric'),
     fetchWeather(currentCity, 'imperial'),
