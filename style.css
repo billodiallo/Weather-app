@@ -3,3 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
   }
+
+  body {
+    background-image: url('img_1.jpeg');
+    background-size: cover;
+    width: 100%;
+  }
