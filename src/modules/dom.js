@@ -46,3 +46,31 @@ export default (data, tempF = null) => {
       currTempF = true;
     }
   };
+
+  moreAbt[0].innerHTML = `
+  <span class='b-feel'>Feels Like</span>
+  ${Math.round(data.feelsLike)}°C
+  `;
+  moreAbt[1].innerHTML = `
+  <i class='fa fa-temperature-high'></i>
+  <span class='b-feel'>Max temp</span>${Math.round(
+    data.tempMax,
+  )}°C, <i class='fa fa-temperature-low'></i>
+  <span class='b-feel'>Min temp</span>${Math.round(data.tempMin)}°C
+  `;
+  d.style.display = 'block';
+  d.addEventListener('click', () => {
+    toggleTempF(d, c, data.temp);
+  });
+  displayCity.className = 'show';
+};
+
+export const selectImage = () => {
+  const script = document.createElement('script');
+  document.head.appendChild(script);
+  window.abc = function abc(data) {
+    const body = document.querySelector('body');
+    body.style.background = `url('${data.items[2].media.m}') no-repeat`;
+    body.style.backgroundSize = 'cover';
+  };
+};
