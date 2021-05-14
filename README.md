@@ -14,6 +14,7 @@ This is a javascript Weather app project. It fetchs live weather data from Weath
 
 [Live Demo Link](https://billodiallo.github.io/Weather-app/)
 
+
 ## Built With
 
 - Javascript/ES6
