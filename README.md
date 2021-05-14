@@ -12,7 +12,7 @@ This is a javascript Weather app project. It fetchs live weather data from Weath
 
 
 
-[Live Demo Link]()
+[Live Demo Link](https://billodiallo.github.io/Weather-app/)
 
 ## Built With
 
