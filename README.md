@@ -8,7 +8,8 @@ This is a javascript Weather app project. It fetchs live weather data from Weath
 
 
 ## Screenshots of the app.
-![todo2](https://user-images.githubusercontent.com/11162987/117532827-2b664080-aff2-11eb-9c42-336f79b7b9c7.JPG)
+![image](https://user-images.githubusercontent.com/11162987/118248751-58f93100-b4ad-11eb-9d0d-3a2399a57594.png)
+
 
 
 [Live Demo Link]()
