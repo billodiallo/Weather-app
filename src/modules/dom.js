@@ -45,7 +45,6 @@ export default (data, tempF = null) => {
     }
   };
 
-  d.style.display = 'block';
   d.addEventListener('click', () => {
     toggleTempF(d, c, data.temp);
   });
@@ -55,9 +54,6 @@ export default (data, tempF = null) => {
 export const selectImage = () => {
   const script = document.createElement('script');
   document.head.appendChild(script);
-  window.abc = data => {
-    const body = document.querySelector('body');
-    body.style.background = `url('${data.items[2].media.m}') no-repeat`;
-    body.style.backgroundSize = 'cover';
+  window.abc = () => {
   };
 };

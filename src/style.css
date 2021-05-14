@@ -1,3 +1,4 @@
+
 * {
   margin: 0px;
   padding: 0px;
@@ -5,7 +6,7 @@
 }
 
 body {
-  background-image: url("im2.jpg");
+  background-image: url("/dist/img_1.jpeg");
   background-size: cover;
   width: 100%;
 }
