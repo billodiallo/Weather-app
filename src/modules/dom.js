@@ -46,17 +46,7 @@ export default (data, tempF = null) => {
     }
   };
 
-  moreAbt[0].innerHTML = `
-  <span class='b-feel'>Feels Like</span>
-  ${Math.round(data.feelsLike)}°C
-  `;
-  moreAbt[1].innerHTML = `
-  <i class='fa fa-temperature-high'></i>
-  <span class='b-feel'>Max temp</span>${Math.round(
-    data.tempMax,
-  )}°C, <i class='fa fa-temperature-low'></i>
-  <span class='b-feel'>Min temp</span>${Math.round(data.tempMin)}°C
-  `;
+  
   d.style.display = 'block';
   d.addEventListener('click', () => {
     toggleTempF(d, c, data.temp);
